@@ -149,6 +149,8 @@ public class JarMainClass {
 		}
 		String sql = getArgValue(args, "-s", false); //$NON-NLS-1$
 		String dbPath = getArgValue(args, "-d", false); //$NON-NLS-1$
+		System.out.println("$ " + sql);
+		System.err.println("$ " + dbPath);
 		if (null == sql || sql.isEmpty()) {
 			help();
 			return;
@@ -181,6 +183,8 @@ public class JarMainClass {
 		}
 		String sqlPath = getArgValue(args, "-f", false); //$NON-NLS-1$
 		String dbPath = getArgValue(args, "-d", false); //$NON-NLS-1$
+		System.out.println(sqlPath);
+		System.out.println(dbPath);
 		if (null == sqlPath || sqlPath.isEmpty()) {
 			help();
 			return;
