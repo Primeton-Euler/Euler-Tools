@@ -39,6 +39,7 @@ public class JarMainClass {
 			return;
 		}
 		final String action = null == args[0] ? null : args[0].trim();
+		System.out.println("$ ACTION = " + action);
 		if (null == action) {
 			help();
 			return;
@@ -79,6 +80,7 @@ public class JarMainClass {
 			}
 			FileUtils.copyFile(f, target); //$NON-NLS-1$
 			System.out.println("$ Set default database jdbc connection configuration file success.");
+			System.out.println("$ See file " + getDefaultDbFile());
 		} else {
 			System.err.println("$ " + path + " not exist or is not a file."); //$NON-NLS-1$
 		}

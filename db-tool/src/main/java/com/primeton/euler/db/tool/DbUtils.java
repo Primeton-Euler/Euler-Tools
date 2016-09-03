@@ -84,6 +84,7 @@ public class DbUtils {
 			try {
 				in = new FileInputStream(path); //$NON-NLS-1$
 				reader = new InputStreamReader(in, "utf-8"); //$NON-NLS-1$
+				System.out.println("$ Execute SQL file " + path);
 				runner.runScript(reader);
 			} catch (Throwable e) {
 				throw new SQLException("$ An error occured while try to execute SQL script.", e); //$NON-NLS-1$
@@ -108,7 +109,6 @@ public class DbUtils {
 					executeSQL(dbcfg, file);
 				}
 			}
-			
 		}
 	}
 	
