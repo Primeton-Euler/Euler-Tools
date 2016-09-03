@@ -26,8 +26,12 @@
 `$ java -jar db-tool-1.0.0.jar exec -f /root/scripts/test.sql`  
 `$ java -jar db-tool-1.0.0.jar run -s CREATE TABLE TEST (...)`  
 `$ `  
-	`# default integrate mysql-jdbc-driver, if want to use other database`
+`$ `  
+`# `  
+`# if not mysql, you can run with JVM arguments '-cp ojdbc14-10.2.0.4.0.jar'`  
+`# `  
 `$ java -cp ~/.m2/repository/.../${driver}.jar -jar db-tool-1.0.0.jar ...`  
+  
   
 	`# db.properties`  
   
@@ -35,5 +39,6 @@
 	jdbc.user=root
 	jdbc.password=root
 	jdbc.driver=com.mysql.jdbc.Driver
+  
   
 ### ...  
