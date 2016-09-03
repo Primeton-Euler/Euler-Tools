@@ -41,4 +41,32 @@
 	jdbc.driver=com.mysql.jdbc.Driver
   
   
+`Simplify Run`  
+  
+`$ cp db-tool-1.0.0-jar-with-dependencies.jar /usr/lib/db-tool-1.0.0.jar`  
+`$ cp db-tool.sh /usr/bin/`  
+`$ chmod +x /usr/bin/db-tool.sh`  
+`$ `  
+	
+	#!/bin/bash
+	
+	# 
+	# Copyright (c) 2001-2016 Primeton Technologies, Ltd. 
+	# All rights reserved.
+	# 
+	# ZhongWen (mailto:lizw@primeton.com)
+	# 
+	
+	# db-tool.sh
+	
+	java ${JAVA_OPTS} -Dfile.encoding=utf-8 -jar /usr/lib/db-tool-1.0.0.jar $@
+  
+  
+`$ `  
+`$ db-tool.sh help`  
+`$ db-tool.sh exec -d /root/db.properties -f /root/scripts`  
+`$ db-tool.sh run -d /root/db.properties -s CREATE TABLE TEST (...)`  
+`$ `  
+  
+  
 ### ...  
