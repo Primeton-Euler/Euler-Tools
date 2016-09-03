@@ -2,13 +2,13 @@
  * Copyright (c) 2001-2016 Primeton Technologies, Ltd.
  * All rights reserved. 
  */
-package com.primeton.euler.db.util;
+package com.primeton.euler.db.tool;
 
 /**
  * @author ZhongWen Li (mailto:lizw@primeton.com)
  *
  */
-public class MainUsage {
+public class JarMainClass {
 	
 	/**
 	 * 
@@ -26,7 +26,7 @@ public class MainUsage {
 	 * Print Usage Help. <br>
 	 */
 	private static void help() {
-		final String CMD_PREFIX = "$ java -jar db-util-" + VERSION.LATEST + ".jar";
+		final String CMD_PREFIX = "$ java -jar db-tool-" + VERSION.LATEST + ".jar";
 		System.out.println("Usage:");
 		System.out.println("# Print usage help information:");
 		System.out.println(CMD_PREFIX + " -h\n");
