@@ -48,6 +48,10 @@ public class JarMainClass {
 			doRun(args);
 		} else if (ACTION_SET.equalsIgnoreCase(action)) {
 			doSet(args);
+		} else if (ACTION_HELP.equalsIgnoreCase(action)) {
+			help();
+		} else {
+			help();
 		}
 	}
 	
